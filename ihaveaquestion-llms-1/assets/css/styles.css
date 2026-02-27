@@ -1,0 +1,71 @@
+/* Popup container */
+.custom-popup {
+    max-width: 500px;
+    width: 90%;
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1000;
+}
+
+/* Textarea styling */
+.custom-popup textarea {
+    width: 100%;
+    height: 120px;
+    border: 1px solid #ccc;
+    padding: 10px;
+    font-size: 14px;
+    border-radius: 5px;
+    resize: vertical;
+}
+
+/* Submit and Cancel Buttons*/
+.custom-popup button {
+    background: #0073aa;
+    color: #fff;
+    padding: 8px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 10px 5px;
+}
+
+/*Customize Buttons for within the quiz answers (I have a question...)*/
+button.custom-button {
+    margin: 50px;
+    background: #0073aa;
+    color: #fff;
+    padding: 8px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.custom-popup button:hover {
+    background: #005f8d;
+}
+
+
+section.llms-quiz-results-main {
+  position: relative; /* ensure pseudo‑element can position itself */
+}
+
+section.llms-quiz-results-main::before {
+  content: "To see more details about your answer or ask a question to your course instructor, click on each question below to expand.";
+  display: block;
+  font-style: italic;
+  background: #eef7ff;
+  border: 1px solid #66aaff;
+  padding: 10px;
+  margin-bottom: 15px;
+  /* if you need it to sit above without affecting flow, you could use absolute positioning:
+  position: absolute;
+  top: -2.5em; left: 0; width: 100%;
+  */
+}
